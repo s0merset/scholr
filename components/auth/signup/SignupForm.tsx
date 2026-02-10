@@ -43,9 +43,9 @@ export default function SignupForm() {
 
           <button
             type="submit"
-            className="py-4 mb-6 w-full text-base font-semibold leading-6 text-white rounded-lg cursor-pointer bg-slate-700 border-none"
+            className="px-4 py-3.5 mb-8 w-full text-[13px] leading-snug text-white tracking-[0.12em] uppercase rounded-none cursor-pointer bg-slate-700 border-[nonepx] hover:shadow-[0_8px_30px_-6px] hover:shadow-primary/30 hover:-translate-y-1 hover:gap-4"
           >
-            Sign up
+            Sign Up
           </button>
         </form>
 

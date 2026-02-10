@@ -27,7 +27,7 @@ export function LandingPage() {
 
       {/* Landing page sections */}
       <main>
-        <Hero />
+        <Hero openSignup={() => setSignupOpen(true)}/>
         <Features />
         <BentoShowcase />
         <HowItWorks />

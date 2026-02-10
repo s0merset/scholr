@@ -4,6 +4,10 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+interface HeroProps {
+    openSignup: () => void;    
+}
+
 const stats = [
   { value: "10k+", label: "Active Students" },
   { value: "2.1M", label: "Documents Analyzed" },
@@ -11,7 +15,7 @@ const stats = [
   { value: "4.9/5", label: "User Rating" },
 ];
 
-export function Hero() {
+export function Hero({openSignup}: HeroProps) {
   const [hoveredStat, setHoveredStat] = useState<number | null>(null);
 
   return (
@@ -67,6 +71,7 @@ export function Hero() {
         <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
           <Button
             size="lg"
+	    onClick={openSignup}
             className="group gap-3 rounded-none px-8 text-[13px] uppercase tracking-[0.12em] transition-all duration-500 hover:shadow-[0_8px_30px_-6px] hover:shadow-primary/30 hover:-translate-y-1 hover:gap-4"
           >
             Start for Free
