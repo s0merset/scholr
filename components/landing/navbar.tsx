@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 
 interface NavbarProps {
     openLogin: () => void;
+    openSignup: () => void;
 }
 
 const navLinks = [
@@ -16,7 +17,7 @@ const navLinks = [
   { label: "FAQ", href: "#faq" },
 ];
 
-export function Navbar({openLogin}: NavbarProps) {
+export function Navbar({openLogin, openSignup}: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -55,6 +56,7 @@ export function Navbar({openLogin}: NavbarProps) {
 	    </Link>
           <Button
             size="sm"
+	    onClick={openSignup}
             className="rounded-none px-6 text-[13px] uppercase tracking-[0.12em] transition-all duration-300 hover:shadow-lg hover:-translate-y-px"
           >
             Get Started

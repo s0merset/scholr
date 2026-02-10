@@ -11,14 +11,19 @@ import { FAQ } from "@/components/landing/faq";
 import { CTA } from "@/components/landing/cta";
 import { Footer } from "@/components/landing/footer";
 import LoginModal from "@/components/auth/login/LoginModal";
+import SignupModal from "../auth/signup/Signupmodal";
 
 export function LandingPage() {
   const [loginOpen, setLoginOpen] = useState(false);
+  const [signupOpen, setSignupOpen] = useState(false);
 
   return (
     <>
       {/* Navbar receives a function to open the login modal */}
-      <Navbar openLogin={() => setLoginOpen(true)} />
+      <Navbar 
+	openLogin={() => setLoginOpen(true)} 
+	openSignup={() => setSignupOpen(true)}	
+      />
 
       {/* Landing page sections */}
       <main>
@@ -34,6 +39,7 @@ export function LandingPage() {
 
       {/* Modal rendered at the top level of this page */}
       <LoginModal isOpen={loginOpen} onClose={() => setLoginOpen(false)} />
+      <SignupModal isOpen={signupOpen} onClose={() => setSignupOpen(false)}/>
     </>
   );
 }

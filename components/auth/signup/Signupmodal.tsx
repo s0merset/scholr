@@ -2,14 +2,14 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
-import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
 
-type LoginModalProps = {
+type SignupModalProps = {
   isOpen: boolean;
   onClose: () => void;
 };
 
-export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
+export const SignupModal: React.FC<SignupModalProps> = ({ isOpen, onClose }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -39,7 +39,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
 
             {/* Modal content */}
             <div className="bg-background rounded-lg shadow-lg p-6">
-              <LoginForm />
+              <SignupForm />
             </div>
           </motion.div>
         </motion.div>
@@ -48,5 +48,6 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
   );
 };
 
-export default LoginModal;
+export default SignupModal;
+
 

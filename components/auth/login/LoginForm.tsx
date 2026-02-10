@@ -27,7 +27,7 @@ export const LoginForm: React.FC = () => {
   return (
       <div className="w-full max-w-[480px]">
         <header className="mb-12">
-          <h1 className="text-5xl font-semibold leading-tight text-yellow-600">
+          <h1 className="text-5xl text-accent font-heading leading-tight text-yellow-600">
             welcome
           </h1>
         </header>
@@ -57,7 +57,7 @@ export const LoginForm: React.FC = () => {
 
           <button
             type="submit"
-            className="px-4 py-3.5 mb-8 w-full text-base font-semibold leading-snug text-white rounded-lg cursor-pointer bg-slate-700 border-[nonepx]"
+            className="px-4 py-3.5 mb-8 w-full text-base font-semibold leading-snug text-white rounded-none cursor-pointer bg-slate-700 border-[nonepx]"
           >
             Sign in
           </button>

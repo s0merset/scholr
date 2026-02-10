@@ -21,7 +21,7 @@ export function Hero() {
         <div className="mb-8 flex items-center gap-4">
           <div className="h-px flex-1 max-w-16 bg-accent" aria-hidden="true" />
           <span className="text-[11px] uppercase tracking-[0.2em] text-accent">
-            AI-Powered Academic Research
+            AI-Powered Research Tool
           </span>
         </div>
 
