@@ -3,7 +3,11 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function CTA() {
+interface CTAProps{
+    openSignup: () => void;
+}
+
+export function CTA({openSignup}: CTAProps) {
   return (
     <section className="py-24 md:py-32 bg-secondary/60">
       <div className="mx-auto max-w-6xl px-6 text-center">
@@ -30,6 +34,7 @@ export function CTA() {
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button
             size="lg"
+	    onClick={openSignup}
             className="group gap-3 rounded-none px-10 text-[13px] uppercase tracking-[0.12em] transition-all duration-500 hover:shadow-[0_12px_40px_-8px] hover:shadow-primary/30 hover:-translate-y-2 hover:gap-5 hover:scale-105"
           >
             Get Started for Free

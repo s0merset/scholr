@@ -33,7 +33,7 @@ export function LandingPage() {
         <HowItWorks />
         <Pricing />
         <FAQ />
-        <CTA />
+        <CTA openSignup={() => setSignupOpen(true)} />
         <Footer />
       </main>
 
