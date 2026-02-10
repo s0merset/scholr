@@ -5,6 +5,10 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+interface NavbarProps {
+    openLogin: () => void;
+}
+
 const navLinks = [
   { label: "Features", href: "#features" },
   { label: "How It Works", href: "#how-it-works" },
@@ -12,7 +16,7 @@ const navLinks = [
   { label: "FAQ", href: "#faq" },
 ];
 
-export function Navbar() {
+export function Navbar({openLogin}: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -38,13 +42,17 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-4 md:flex">
-          <Link
-            href="#"
-            className="group relative text-[13px] uppercase tracking-[0.12em] text-muted-foreground transition-colors duration-300 hover:text-foreground"
-          >
+	    <Link
+		href='#'
+		onClick={(e) => {
+		    e.preventDefault();
+		    openLogin();
+		}}
+		className="group relative text-[13px] uppercase tracking-[0.12em] text-muted-foreground transition-colors duration-300 hover:text-foreground"
+	    >
             Log in
             <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
-          </Link>
+	    </Link>
           <Button
             size="sm"
             className="rounded-none px-6 text-[13px] uppercase tracking-[0.12em] transition-all duration-300 hover:shadow-lg hover:-translate-y-px"
