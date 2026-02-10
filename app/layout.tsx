@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Scholr - AI-Powered Academic Assistant",
+  title: "Scholr",
   description:
     "Transform your PDFs and research papers into a smarter, interactive study system. Notes, flashcards, quizzes, and citations - all powered by AI.",
 };
