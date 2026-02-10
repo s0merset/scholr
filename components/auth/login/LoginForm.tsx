@@ -57,7 +57,7 @@ export const LoginForm: React.FC = () => {
 
           <button
             type="submit"
-            className="px-4 py-3.5 mb-8 w-full text-base font-semibold leading-snug text-white rounded-none cursor-pointer bg-slate-700 border-[nonepx]"
+            className="px-4 py-3.5 mb-8 w-full text-base font-semibold leading-snug text-white rounded-none cursor-pointer bg-slate-700 border-[nonepx] hover:shadow-[0_8px_30px_-6px] hover:shadow-primary/30 hover:-translate-y-1 hover:gap-4"
           >
             Sign in
           </button>
