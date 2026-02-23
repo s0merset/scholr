@@ -13,7 +13,7 @@ import { Footer } from "./components/footer";
 import LoginModal from "../login/components/LoginMoodal";
 import SignupModal from "../signup/components/SignupModal";
 
-export function LandingPage() {
+export default function LandingPage() {
   const [loginOpen, setLoginOpen] = useState(false);
   const [signupOpen, setSignupOpen] = useState(false);
 
