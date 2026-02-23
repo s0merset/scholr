@@ -1,4 +1,4 @@
-"use client";
+"se client";
 import React, { useState } from 'react';
 
 interface ToggleSwitchProps {
