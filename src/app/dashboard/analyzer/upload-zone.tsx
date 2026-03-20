@@ -22,10 +22,6 @@ export function UploadZone() {
             Drop manuscripts here
           </h3>
           <div className="flex items-center justify-center gap-2 opacity-60 group-hover:opacity-100 transition-opacity">
-            <Zap className="w-3 h-3 text-accent" />
-            <p className="text-[0.65rem] uppercase tracking-[0.2em] font-bold">
-              Neural processing ready
-            </p>
           </div>
         </div>
         
